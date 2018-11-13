@@ -5,12 +5,8 @@ fun main(args: Array<String>) {
 
 }
 class LeapYearIdentifier{
-
-
-    fun isBissexto(numero:Int) {
-
-        return when(){
-            numero % 4 === 0 -> true
-        }
-    }
+    fun isLeapYear(year:Int) {
+        return if((year % 4 === 0 && year % 100 === 0) || (year % 400 === 0){
+            true
+        }else false
 }
